@@ -120,6 +120,11 @@ body
 }
 
 /*/* Block meilleur film */
+.meilleur-film
+{
+    margin-top: 50px;
+}
+
 .list-meilleur-film
 {
     list-style-type: none;
@@ -146,12 +151,39 @@ body
     margin-top: 15px;
 }
 
+/*/* Autres block*/
+.meilleurs-films li,
+.horreur li
+{
+    margin: 10px;
+}
 
+.liste
+{
+    list-style-type: none;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 38px;
+    display: flex;
+}
+
+.liste img:hover
+{
+    color: #1e1e1e;
+    opacity: 0.2;
+    cursor: pointer;
+}
 
 .suivpre
 {
     width: 5em;
     height: 3em;
+}
+
+.suivpre:hover
+{
+    opacity: 0.5;
+    cursor: pointer;
 }
 
 .play
@@ -161,8 +193,14 @@ body
 
 .play:hover
 {
+    opacity: 0.5;
     cursor: pointer;
-    width: 3%;
+}
+
+.p-cate
+{
+    margin-top: 50px;
+    font-size: xx-large;
 }
 
 
