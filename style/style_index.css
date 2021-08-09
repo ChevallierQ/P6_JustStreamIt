@@ -81,6 +81,8 @@ body
 .liste-menu li:hover
 {
     color: #1e1e1e;
+    transform: scale(1.2);
+    transition: 0.3s;
 }
 
 #logo
@@ -153,7 +155,9 @@ body
 
 /*/* Autres block*/
 .meilleurs-films li,
-.horreur li
+.horreur li,
+.sf li,
+.comedie li
 {
     margin: 10px;
 }
@@ -167,11 +171,18 @@ body
     display: flex;
 }
 
+.comedie
+{
+    margin-bottom: 30px;
+}
+
 .liste img:hover
 {
     color: #1e1e1e;
     opacity: 0.2;
     cursor: pointer;
+    transform: scale(1.2);
+    transition: 0.3s;
 }
 
 .suivpre
@@ -184,6 +195,8 @@ body
 {
     opacity: 0.5;
     cursor: pointer;
+    transform: scale(1.2);
+    transition: 0.3s;
 }
 
 .play
@@ -195,6 +208,8 @@ body
 {
     opacity: 0.5;
     cursor: pointer;
+    transform: scale(1.2);
+    transition: 0.3s;
 }
 
 .p-cate
@@ -270,6 +285,8 @@ footer
 .liste-reseaux a:hover
 {
     color: #1e1e1e;
+    transform: scale(1.2);
+    transition: 0.3s;
 }
 
 @media screen and (max-width: 1300px)
@@ -311,3 +328,52 @@ footer
         margin-top: 0;
     }
 }
+
+
+
+/* Modale */
+.modal
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgba(00, 00, 00, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.show
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+.boite
+{
+    position: relative;
+    padding: 150px;
+    background-color: white;
+    color: black;
+    border-radius: 10%;
+}
+
+.fermer
+{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: 0.3s;
+}
+
+.boite .fermer:hover{
+    transform:scale(1.3);
+  }
