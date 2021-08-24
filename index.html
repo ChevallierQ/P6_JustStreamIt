@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style/style_index.css" />
@@ -11,11 +11,11 @@
 
         <div class="contenu-body">
 
-            <div id="head">
+            <div class="head">
 
-                <img src="data/logo.png" alt="Logo" id="logo">
-                <h1 id="title"><b>J</b>ust<b>S</b>tream<b>I</b>t</h1>
-                <div id="menu">
+                <img src="data/logo.png" alt="Logo" class="logo">
+                <h1 class="title"><b>J</b>ust<b>S</b>tream<b>I</b>t</h1>
+                <div class="menu">
 
                     <ul class="liste-menu">
                         <li>Accueil</li>
@@ -24,76 +24,84 @@
                 </div>
             </div>
 
-            <div id="body">
+            <div class="body">
 
                 <div class="block-body meilleur-film">
                     <ul class="list-meilleur-film">
-                        <li><div id="bestMovie"></div></li>
-                        <li><div id="bestMovieResume"></div></li>
+                        <li><div class="bestMovie"></div></li>
+                        <li><div class="bestMovieResume"></div></li>
                         <li><img src="data/play.svg" alt="Play" class="play" role="button" data-target="#modal" data-toggle="modal"></li>
                     </ul>
-                    <img src="" alt="" id="bestMovieImg">
+                    <img src="#" alt="#" class="bestMovieImg" role="button" data-target="#modal" data-toggle="modal">
                 </div>
                 
 
                 <p class="p-cate">Films les mieux notes</p>
-                <div class="block-body meilleurs-films">
-                    <img src="data/flechegauche.png" alt="Precedent" class="suivpre">
-                    <ul class="liste meilleurs-films">
-                        <li><img src="" alt="" id="meilleursFilms1"></li>
-                        <li><img src="" alt="" id="meilleursFilms2"></li>
-                        <li><img src="" alt="" id="meilleursFilms3"></li>
-                        <li><img src="" alt="" id="meilleursFilms4"></li>
-                        <li><img src="" alt="" id="meilleursFilms5"></li>
-                        <li><img src="" alt="" id="meilleursFilms6"></li>   
-                        <li><img src="" alt="" id="meilleursFilms7"></li>
-                    </ul>
-                    <img src="data/flechedroite.png" alt="Suivant" class="suivpre">
+                <div class="block-body-t">
+                    <img src="data/flechegauche.png" alt="Precedent" class="suivpre prec-mf">
+                    <div class="block-body meilleurs-films">
+                        <ul class="liste meilleurs-films">
+                            <li><img src="#" alt="#" class="meilleursFilms1" role="button" data-target="#modal" data-toggle="modal"></li>
+                            <li><img src="#" alt="#" class="meilleursFilms2" role="button" data-target="#modal" data-toggle="modal"></li>
+                            <li><img src="#" alt="#" class="meilleursFilms3" role="button" data-target="#modal" data-toggle="modal"></li>
+                            <li><img src="#" alt="#" class="meilleursFilms4" role="button" data-target="#modal" data-toggle="modal"></li>
+                            <li><img src="#" alt="#" class="meilleursFilms5" role="button" data-target="#modal" data-toggle="modal"></li>
+                            <li><img src="#" alt="#" class="meilleursFilms6" role="button" data-target="#modal" data-toggle="modal"></li>   
+                            <li><img src="#" alt="#" class="meilleursFilms7" role="button" data-target="#modal" data-toggle="modal"></li>
+                        </ul>
+                    </div>
+                    <img src="data/flechedroite.png" alt="Suivant" class="suivpre suiv-mf">
                 </div>
 
                 <p class="p-cate">Horreur</p>
-                <div class="block-body horreur">
-                    <img src="data/flechegauche.png" alt="Precedent" class="suivpre">
-                    <ul class="liste horreur">
-                        <li><img src="" alt="" id="horreur1"></li>
-                        <li><img src="" alt="" id="horreur2"></li>
-                        <li><img src="" alt="" id="horreur3"></li>
-                        <li><img src="" alt="" id="horreur4"></li>
-                        <li><img src="" alt="" id="horreur5"></li>
-                        <li><img src="" alt="" id="horreur6"></li>   
-                        <li><img src="" alt="" id="horreur7"></li>
-                    </ul>
-                    <img src="data/flechedroite.png" alt="Suivant" class="suivpre">
+                <div class="block-body-t">
+                    <img src="data/flechegauche.png" alt="Precedent" class="suivpre prec-h">
+                    <div class="block-body horreur">
+                        <ul class="liste horreur">
+                            <li><img src="#" alt="#" class="horreur1" role="button" data-target="#modal" data-toggle="modal"></li>
+                            <li><img src="#" alt="#" class="horreur2" role="button" data-target="#modal" data-toggle="modal"></li>
+                            <li><img src="#" alt="#" class="horreur3" role="button" data-target="#modal" data-toggle="modal"></li>
+                            <li><img src="#" alt="#" class="horreur4" role="button" data-target="#modal" data-toggle="modal"></li>
+                            <li><img src="#" alt="#" class="horreur5" role="button" data-target="#modal" data-toggle="modal"></li>
+                            <li><img src="#" alt="#" class="horreur6" role="button" data-target="#modal" data-toggle="modal"></li>   
+                            <li><img src="#" alt="#" class="horreur7" role="button" data-target="#modal" data-toggle="modal"></li>
+                        </ul>
+                    </div>
+                    <img src="data/flechedroite.png" alt="Suivant" class="suivpre suiv-h">
                 </div>
 
                 <p class="p-cate">Science fiction</p>
-                <div class="block-body sf">
-                    <img src="data/flechegauche.png" alt="Precedent" class="suivpre">
-                    <ul class="liste sf">
-                        <li><img src="" alt="" id="sf1"></li>
-                        <li><img src="" alt="" id="sf2"></li>
-                        <li><img src="" alt="" id="sf3"></li>
-                        <li><img src="" alt="" id="sf4"></li>
-                        <li><img src="" alt="" id="sf5"></li>
-                        <li><img src="" alt="" id="sf6"></li>   
-                        <li><img src="" alt="" id="sf7"></li>
-                    </ul>
-                    <img src="data/flechedroite.png" alt="Suivant" class="suivpre">
+                <div class="block-body-t">
+                    <img src="data/flechegauche.png" alt="Precedent" class="suivpre prec-sf">
+                    <div class="block-body sf">
+                        <ul class="liste sf">
+                            <li><img src="#" alt="#" class="sf1" role="button" data-target="#modal" data-toggle="modal"></li>
+                            <li><img src="#" alt="#" class="sf2" role="button" data-target="#modal" data-toggle="modal"></li>
+                            <li><img src="#" alt="#" class="sf3" role="button" data-target="#modal" data-toggle="modal"></li>
+                            <li><img src="#" alt="#" class="sf4" role="button" data-target="#modal" data-toggle="modal"></li>
+                            <li><img src="#" alt="#" class="sf5" role="button" data-target="#modal" data-toggle="modal"></li>
+                            <li><img src="#" alt="#" class="sf6" role="button" data-target="#modal" data-toggle="modal"></li>   
+                            <li><img src="#" alt="#" class="sf7" role="button" data-target="#modal" data-toggle="modal"></li>
+                        </ul>
+                    </div>
+                    <img src="data/flechedroite.png" alt="Suivant" class="suivpre suiv-sf">
                 </div>
 
                 <p class="p-cate">Comedie</p>
-                <div class="block-body comedie">
-                    <img src="data/flechegauche.png" alt="Precedent" class="suivpre">
-                    <ul class="liste comedie">
-                        <li><img src="" alt="" id="comedie1"></li>
-                        <li><img src="" alt="" id="comedie2"></li>
-                        <li><img src="" alt="" id="comedie3"></li>
-                        <li><img src="" alt="" id="comedie4"></li>
-                        <li><img src="" alt="" id="comedie5"></li>
-                        <li><img src="" alt="" id="comedie6"></li>   
-                        <li><img src="" alt="" id="comedie7"></li>
-                    </ul>
-                    <img src="data/flechedroite.png" alt="Suivant" class="suivpre">
+                <div class="block-body-t">
+                    <img src="data/flechegauche.png" alt="Precedent" class="suivpre prec-c">
+                    <div class="block-body comedie">
+                        <ul class="liste comedie">
+                            <li><img src="#" alt="#" class="comedie1" role="button" data-target="#modal" data-toggle="modal"></li>
+                            <li><img src="#" alt="#" class="comedie2" role="button" data-target="#modal" data-toggle="modal"></li>
+                            <li><img src="#" alt="#" class="comedie3" role="button" data-target="#modal" data-toggle="modal"></li>
+                            <li><img src="#" alt="#" class="comedie4" role="button" data-target="#modal" data-toggle="modal"></li>
+                            <li><img src="#" alt="#" class="comedie5" role="button" data-target="#modal" data-toggle="modal"></li>
+                            <li><img src="#" alt="#" class="comedie6" role="button" data-target="#modal" data-toggle="modal"></li>   
+                            <li><img src="#" alt="#" class="comedie7" role="button" data-target="#modal" data-toggle="modal"></li>
+                        </ul>
+                    </div>
+                    <img src="data/flechedroite.png" alt="Suivant" class="suivpre suiv-c">
                 </div>
 
             </div>
@@ -123,18 +131,20 @@
         </footer>
         <div class="modal" id="modal" role="dialog">
             <div class="boite">
-                <span class="image-modale"></span>
-                <span class="titre-modale"></span>
-                <span class="genre-modale"></span>
-                <span class="sortie-modale"></span>
-                <span class="rated-modale"></span>
-                <span class="imdb-modale"></span>
-                <span class="realisateur-modale"></span>
-                <span class="acteurs-modale"></span>
-                <span class="duree-modale"></span>
-                <span class="origine-modale"></span>
-                <span class="boxoffice-modale"></span>
-                <span class="resume-modale"></span>
+                <img src="#" alt="#" class="image-modale">
+                <ul class="liste-modale">
+                    <li><span class="titre-modale"></span></li>
+                    <li><span class="genre-modale"></span></li>
+                    <li><span class="sortie-modale"></span></li>
+                    <li><span class="rated-modale"></span></li>
+                    <li><span class="imdb-modale"></span></li>
+                    <li><span class="realisateur-modale"></span></li>
+                    <li><span class="acteurs-modale"></span></li>
+                    <li><span class="duree-modale"></span></li>
+                    <li><span class="origine-modale"></span></li>
+                    <li><span class="boxoffice-modale"></span></li>
+                    <li><span class="resume-modale"></span></li>
+                </ul>
                 <span class="fermer" data-dismiss="dialog">Close</span>
             </div>
         </div>
